@@ -57,6 +57,7 @@ layout = html.Div(
                                 for cluster in sorted(df['cluster'].unique())
                             ],
                             id='cluster-choice2',
+                
                             style={'width': '200px'}
                         )
                     ],
@@ -86,13 +87,17 @@ layout = html.Div(
                             page_size=15,  # Set the default number of rows per page
                             page_action='native',  # Enable built-in pagination
                             page_current=0,  # Set the initial page to 0
+                           filter_action="native",
+                            sort_action="native",
+                            sort_mode='multi',
+                        
                             style_cell={
                                 'fontSize': 14,
                                 'font-family': 'Roboto',
                                 'height': 'auto',
-                                'minWidth': '180px',
-                                'width': '180px',
-                                'maxWidth': '180px',
+                                'minWidth': '320px',
+                                'width': '320px',
+                                'maxWidth': '320px',
                                 'whiteSpace': 'normal',
                                 'textAlign': 'center',
                                 'padding': '10px',
