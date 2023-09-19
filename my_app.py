@@ -28,7 +28,7 @@ app.layout = dbc.Container([
                 dbc.Col(
                     [
                         html.Div("FP Store Clustering", style={'fontSize': 40, 'textAlign': 'center', 'color': '#808080'}),
-                        html.Div("Using Net Amount 2022-01-01 and 2022-12-31", style={'fontSize': 15, 'textAlign': 'center', 'color': '#808080', 'fontStyle': 'italic'}),
+                        html.Div("Using Net Amount Between 2022-01-01 and 2022-12-31", style={'fontSize': 15, 'textAlign': 'center', 'color': '#808080', 'fontStyle': 'italic'}),
                     ],
                     width={"size": 10, "offset": 1},  # Center the heading horizontally
                 ),
